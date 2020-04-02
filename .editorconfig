@@ -1,0 +1,4 @@
+﻿[*.cs]
+
+# CA1707: 从命名空间名称“inventory_management_api”中删除下划线。
+dotnet_diagnostic.CA1707.severity = silent
