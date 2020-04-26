@@ -27,42 +27,7 @@ namespace inventory_management_api.Controllers
             return await _context.DeliveryMainInfo.ToListAsync();
         }
         //PUT:api/DeliveryMainInfoes/00003
-        [HttpPut("{orderNumber}")]
-        public async Task<ActionResult<IEnumerable<DeliveryDetailInfo>>> PutDeliveryMainInfo(string orderNumber, DeliveryMainInfo deliveryMainInfo)
-        {
-            if (orderNumber != deliveryMainInfo.DeliveryOrderNumber)
-            {
-                return BadRequest();
-            }
-            _context.Entry(deliveryMainInfo).State = EntityState.Modified;
-            try
-            {
-                await _context.SaveChangesAsync();
-            }
-            catch (DbUpdateConcurrencyException)
-            {
-                if (!DeliveryMainInfoExists(orderNumber))
-                {
-                    return NotFound();
-                }
-                else
-                {
-                    throw;
-                }
-            }
-            return NoContent();
-        }
-        [HttpPost]
-        public async Task<ActionResult<IEnumerable<DeliveryMainInfo>>> PostDeliveryMainInfo(DeliveryMainInfo deliveryMainInfo)
-        {
-             _context.DeliveryMainInfo.Add(deliveryMainInfo);
-            await _context.SaveChangesAsync();
-            return CreatedAtAction("GetDeliveryMainInfo",deliveryMainInfo);
-        }
-        private bool DeliveryMainInfoExists(string orderNumber)
-        {
-            return _context.DeliveryMainInfo.Any(e => e.DeliveryOrderNumber == orderNumber);
-        }
+
         [HttpDelete("{orderNumber}")]
         public async Task<ActionResult<IEnumerable<DeliveryMainInfo>>> DeleteDeliveryMainInfo(string orderNumber)
         {

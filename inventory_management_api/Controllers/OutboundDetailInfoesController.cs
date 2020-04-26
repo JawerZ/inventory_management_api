@@ -21,56 +21,10 @@ namespace inventory_management_api.Controllers
         }
 
         // GET: api/OutboundDetailInfoes
-        [HttpGet]
-        public async Task<ActionResult<IEnumerable<OutboundDetailInfo>>> GetOutboundDetailInfo()
+        [HttpGet("{orderNumber}")]
+        public async Task<ActionResult<IEnumerable<OutboundDetailInfo>>> GetOutboundDetailInfo(string orderNumber)
         {
-            return await _context.OutboundDetailInfo.ToListAsync();
-        }
-
-        // GET: api/OutboundDetailInfoes/5
-        [HttpGet("query")]
-        public async Task<ActionResult<OutboundDetailInfo>> GetOutboundDetailInfo(int id)
-        {
-            var outboundDetailInfo = await _context.OutboundDetailInfo.FindAsync(id);
-
-            if (outboundDetailInfo == null)
-            {
-                return NotFound();
-            }
-
-            return outboundDetailInfo;
-        }
-
-        // PUT: api/OutboundDetailInfoes/5
-        // To protect from overposting attacks, please enable the specific properties you want to bind to, for
-        // more details see https://aka.ms/RazorPagesCRUD.
-        [HttpPut("{id}")]
-        public async Task<IActionResult> PutOutboundDetailInfo(int id, OutboundDetailInfo outboundDetailInfo)
-        {
-            if (id != outboundDetailInfo.DetailId)
-            {
-                return BadRequest();
-            }
-
-            _context.Entry(outboundDetailInfo).State = EntityState.Modified;
-
-            try
-            {
-                await _context.SaveChangesAsync();
-            }
-            catch (DbUpdateConcurrencyException)
-            {
-                if (!OutboundDetailInfoExists(id))
-                {
-                    return NotFound();
-                }
-                else
-                {
-                    throw;
-                }
-            }
-
-            return NoContent();
+            return await _context.OutboundDetailInfo.Where(e =>e.OrderNumber == orderNumber).ToListAsync();
         }
 
         // POST: api/OutboundDetailInfoes
@@ -118,22 +72,6 @@ namespace inventory_management_api.Controllers
             }
             await _context.SaveChangesAsync();
             return CreatedAtAction("GetOutboundDetailInfo",ids , outboundDetailInfoes);
-        }
-
-        // DELETE: api/OutboundDetailInfoes/5
-        [HttpDelete("{id}")]
-        public async Task<ActionResult<OutboundDetailInfo>> DeleteOutboundDetailInfo(int id)
-        {
-            var outboundDetailInfo = await _context.OutboundDetailInfo.FindAsync(id);
-            if (outboundDetailInfo == null)
-            {
-                return NotFound();
-            }
-
-            _context.OutboundDetailInfo.Remove(outboundDetailInfo);
-            await _context.SaveChangesAsync();
-
-            return outboundDetailInfo;
         }
         private bool OutboundMainInfoExists(string orderNumber)
         {

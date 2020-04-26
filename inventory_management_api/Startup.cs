@@ -13,6 +13,7 @@ using Microsoft.Extensions.Logging;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.SqlServer;
 using inventory_management_api.Models;
+using Microsoft.AspNetCore.Cors;
 using System.IO;
 
 namespace inventory_management_api
@@ -31,6 +32,7 @@ namespace inventory_management_api
         {
             services.AddDbContext<InventoryContext>(option => option.UseSqlServer(Configuration.GetConnectionString("SqlServerConnection")));
             services.AddMvc();
+            //services.AddCors(option => option.AddPolicy)
             services.AddSwaggerGen(swagger =>
             {
                 swagger.SwaggerDoc("v1", new Microsoft.OpenApi.Models.OpenApiInfo { Version = "v1",Title = "InventoryApi" ,Description = "¿â´æ¹ÜÀíAPI"});
@@ -47,15 +49,14 @@ namespace inventory_management_api
             {
                 app.UseDeveloperExceptionPage();
             }
+            
             app.UseSwagger();
             app.UseSwaggerUI(c =>
             {
                         c.SwaggerEndpoint("/swagger/v1/swagger.json", "InventoryApi");
-                        
-                        
             });
             app.UseHttpsRedirection();
-
+            
             app.UseRouting();
 
             app.UseAuthorization();

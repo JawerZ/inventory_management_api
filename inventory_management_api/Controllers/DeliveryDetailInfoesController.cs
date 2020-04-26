@@ -21,7 +21,7 @@ namespace inventory_management_api.Controllers
         }
 
         // GET: api/DeliveryDetailInfoes
-        [HttpGet("orderNumber")]
+        [HttpGet("{orderNumber}")]
         public async Task<ActionResult<IEnumerable<DeliveryDetailInfo>>> GetDeliveryDetailInfo(string orderNumber)
         {
             return await _context.DeliveryDetailInfo.Where(e=>e.OrderNumber == orderNumber).ToListAsync();
@@ -80,20 +80,6 @@ namespace inventory_management_api.Controllers
         }
 
         // DELETE: api/DeliveryDetailInfoes/5
-        [HttpDelete("{id}")]
-        public async Task<ActionResult<DeliveryDetailInfo>> DeleteDeliveryDetailInfo(int id)
-        {
-            var deliveryDetailInfo = await _context.DeliveryDetailInfo.FindAsync(id);
-            if (deliveryDetailInfo == null)
-            {
-                return NotFound();
-            }
-
-            _context.DeliveryDetailInfo.Remove(deliveryDetailInfo);
-            await _context.SaveChangesAsync();
-
-            return deliveryDetailInfo;
-        }
         private bool InventoryInfoExists(string name, string spec)
         {
             return _context.InventoryInfo.Any(e => e.ProductName == name && e.ProductSpec == spec);
