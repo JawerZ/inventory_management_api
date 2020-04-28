@@ -1,0 +1,11 @@
+C:\Users\user\source\repos\inventory_management_api\Inventory.Core.IRepository\bin\Debug\netcoreapp3.1\Inventory.Core.IRepository.exe
+C:\Users\user\source\repos\inventory_management_api\Inventory.Core.IRepository\obj\Debug\netcoreapp3.1\Inventory.Core.IRepository.AssemblyInfoInputs.cache
+C:\Users\user\source\repos\inventory_management_api\Inventory.Core.IRepository\obj\Debug\netcoreapp3.1\Inventory.Core.IRepository.AssemblyInfo.cs
+C:\Users\user\source\repos\inventory_management_api\Inventory.Core.IRepository\bin\Debug\netcoreapp3.1\System.Data.SqlClient.dll
+C:\Users\user\source\repos\inventory_management_api\Inventory.Core.IRepository\bin\Debug\netcoreapp3.1\runtimes\win-arm64\native\sni.dll
+C:\Users\user\source\repos\inventory_management_api\Inventory.Core.IRepository\bin\Debug\netcoreapp3.1\runtimes\win-x64\native\sni.dll
+C:\Users\user\source\repos\inventory_management_api\Inventory.Core.IRepository\bin\Debug\netcoreapp3.1\runtimes\win-x86\native\sni.dll
+C:\Users\user\source\repos\inventory_management_api\Inventory.Core.IRepository\bin\Debug\netcoreapp3.1\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
+C:\Users\user\source\repos\inventory_management_api\Inventory.Core.IRepository\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll
+C:\Users\user\source\repos\inventory_management_api\Inventory.Core.IRepository\obj\Debug\netcoreapp3.1\Inventory.Core.IRepository.csprojAssemblyReference.cache
+C:\Users\user\source\repos\inventory_management_api\Inventory.Core.IRepository\obj\Debug\netcoreapp3.1\Inventory.Core.IRepository.csproj.CopyComplete

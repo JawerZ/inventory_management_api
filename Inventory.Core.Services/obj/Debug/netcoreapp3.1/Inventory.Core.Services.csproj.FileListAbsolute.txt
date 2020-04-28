@@ -1,0 +1,3 @@
+C:\Users\user\source\repos\inventory_management_api\Inventory.Core.Services\obj\Debug\netcoreapp3.1\Inventory.Core.Services.csprojAssemblyReference.cache
+C:\Users\user\source\repos\inventory_management_api\Inventory.Core.Services\obj\Debug\netcoreapp3.1\Inventory.Core.Services.AssemblyInfoInputs.cache
+C:\Users\user\source\repos\inventory_management_api\Inventory.Core.Services\obj\Debug\netcoreapp3.1\Inventory.Core.Services.AssemblyInfo.cs

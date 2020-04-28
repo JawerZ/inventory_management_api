@@ -1,0 +1,10 @@
+C:\Users\user\source\repos\inventory_management_api\Inventory.Core.Model\obj\Debug\netcoreapp3.1\Inventory.Core.Model.csprojAssemblyReference.cache
+C:\Users\user\source\repos\inventory_management_api\Inventory.Core.Model\obj\Debug\netcoreapp3.1\Inventory.Core.Model.AssemblyInfoInputs.cache
+C:\Users\user\source\repos\inventory_management_api\Inventory.Core.Model\obj\Debug\netcoreapp3.1\Inventory.Core.Model.AssemblyInfo.cs
+C:\Users\user\source\repos\inventory_management_api\Inventory.Core.Model\bin\Debug\netcoreapp3.1\Inventory.Core.Model.deps.json
+C:\Users\user\source\repos\inventory_management_api\Inventory.Core.Model\bin\Debug\netcoreapp3.1\Inventory.Core.Model.runtimeconfig.json
+C:\Users\user\source\repos\inventory_management_api\Inventory.Core.Model\bin\Debug\netcoreapp3.1\Inventory.Core.Model.runtimeconfig.dev.json
+C:\Users\user\source\repos\inventory_management_api\Inventory.Core.Model\bin\Debug\netcoreapp3.1\Inventory.Core.Model.dll
+C:\Users\user\source\repos\inventory_management_api\Inventory.Core.Model\bin\Debug\netcoreapp3.1\Inventory.Core.Model.pdb
+C:\Users\user\source\repos\inventory_management_api\Inventory.Core.Model\obj\Debug\netcoreapp3.1\Inventory.Core.Model.dll
+C:\Users\user\source\repos\inventory_management_api\Inventory.Core.Model\obj\Debug\netcoreapp3.1\Inventory.Core.Model.pdb

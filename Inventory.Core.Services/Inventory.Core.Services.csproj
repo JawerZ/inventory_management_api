@@ -1,0 +1,14 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Inventory.Core.IRepository\Inventory.Core.IRepository.csproj" />
+    <ProjectReference Include="..\Inventory.Core.IServices\Inventory.Core.IServices.csproj" />
+    <ProjectReference Include="..\Inventory.Core.Model\Inventory.Core.Model.csproj" />
+  </ItemGroup>
+
+</Project>
